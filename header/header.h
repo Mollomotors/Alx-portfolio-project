@@ -60,21 +60,6 @@ bool isInsideMap(float x, float y);
 void renderMap(void);
 int getMapValue(int row, int col);
 
-/* Functions-variables-structs for player */
-
-/**
- * struct player_s - struct for the textures
- * @x: x coordinate
- * @y: y coordinate
- * @width: player width
- * @height: player height
- * @turnDirection: Turn Direction
- * @walkDirection: Walk Direction
- * @rotationAngle: player rotation angle
- * @walkSpeed: walk speed
- * @turnSpeed: turn speed
- */
-
 typedef struct player_s
 {
 	float x;
@@ -92,18 +77,6 @@ extern player_t player;
 
 void movePlayer(float DeltaTime);
 void renderPlayer(void);
-
-/* Functions-variables-structs for ray */
-
-/**
- * struct ray_s - struct for the textures
- * @rayAngle: ray angle
- * @wallHitX: wall hit x coordinate
- * @wallHitY: wall hit x coordinate
- * @distance: ditance to the wall
- * @wasHitVertical: verify hit vertical
- * @wallHitContent: wall hit content
- */
 
 typedef struct ray_s
 {
@@ -128,16 +101,6 @@ void renderRays(void);
 void horzIntersection(float rayAngle);
 void vertIntersection(float rayAngle);
 
-/* Functions-variables-structs for textures */
-
-/**
- * struct texture_s - struct for the textures
- * @width: texture width
- * @height: texture height
- * @texture_buffer: pointer to texture buffer
- * @upngTexture: pointer to upng buffer
- *
- */
 
 typedef struct texture_s
 {
